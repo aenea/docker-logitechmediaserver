@@ -21,8 +21,7 @@ RUN apt-get update && \
 
 # Install LMS
 ENV LMS_URL="http://www.mysqueezebox.com/update/?version=7.9.0&revision=1&geturl=1&os=deb"
-RUN useradd --system --uid 801 -M -s /bin/false -d /usr/share/squeezeboxserver -G nogroup -c "Logitech Media Server user" squeezeboxserver && \
-    apt-get update && \
+RUN apt-get update && \
     apt-get install --yes wget && \
     wget $(wget -q -O - "$LMS_URL") -q -O /tmp/lms.deb && \
     dpkg -i /tmp/lms.deb && \
