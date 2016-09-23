@@ -51,6 +51,7 @@ RUN mkdir -p /var/log/supervisor
 
 COPY ./supervisord.conf /etc/
 COPY ./start-lms.sh /usr/local/bin/
+RUN chmod +x /usr/local/bin/start-lms.sh
 
 VOLUME ["/mnt/state", "/mnt/music", "/mnt/playlists"]
 
