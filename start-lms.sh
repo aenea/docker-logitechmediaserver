@@ -6,4 +6,3 @@ if [ ! -d /mnt/state/etc ]; then
 fi
 chown squeezeboxserver.nogroup /mnt/state /mnt/playlists
 /usr/bin/supervisord -c /etc/supervisord.conf
-
