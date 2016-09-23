@@ -10,6 +10,7 @@ RUN apt-get update && \
     apt-get install --yes \
     libgdbm3 \
     libgomp1 \
+    libio-socket-ssl-perl \
     locales \
     netbase \
     perl \
