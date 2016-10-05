@@ -1,4 +1,4 @@
-FROM ubuntu:xenial
+FROM phusion/baseimage
 
 MAINTAINER aenea <docker@aenea.org>
 
